@@ -1,12 +1,46 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  	<!-- Meta -->
+  	<meta charset="utf-8">
+  	<meta name="keywords" content="HTML5 Template" />
+  	<meta name="description" content="Slander - Responsive HTML5 Landing Page">
+  	<meta name="author" content="dkpixels.com">
+
+  	<title>crossy.io - Cross Compiling for Chickens</title>
+
+  	<!-- Mobile Metas -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  	<!-- Favicons -->
+  	<link rel="shortcut icon" href="{{ "/img/favicon.ico" | prepend: site.baseurl }}">
+  	<link rel="apple-touch-icon" href="{{ "/img/apple-touch-icon.png" | prepend: site.baseurl }}">
+  	<link rel="apple-touch-icon" sizes="72x72" href="{{ "/img/apple-touch-icon-72x72.png" | prepend: site.baseurl }}">
+  	<link rel="apple-touch-icon" sizes="114x114" href="{{ "/img/apple-touch-icon-114x114.png" | prepend: site.baseurl }}">
+  	<link rel="apple-touch-icon" sizes="144x144" href="{{ "/img/apple-touch-icon-144x144.png" | prepend: site.baseurl }}">
+
+  	<!-- Google Webfonts -->
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,800,700italic,800italic' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,700italic' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800' rel='stylesheet' type='text/css'>
+
+  	<!-- CSS -->
+  	<link href="{{ "/css/bootstrap.css" | prepend: site.baseurl }}" rel="stylesheet">
+  	<link href="{{ "/css/style.css" | prepend: site.baseurl }}" rel="stylesheet">
+  	<link href="{{ "/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}" rel="stylesheet">
+  	<link href="{{ "/js/owl-carousel/owl.carousel.css" | prepend: site.baseurl }}" rel="stylesheet">
+  	<link href="{{ "/js/owl-carousel/owl.theme.css" | prepend: site.baseurl }}" rel="stylesheet">
+  	<link href="{{ "/js/rs-plugin/css/settings.css" | prepend: site.baseurl }}" rel="stylesheet" />
+  	<link href="{{ "css/animate.css" | prepend: site.baseurl }}" rel="stylesheet" />
+
+  	<script src="//use.typekit.net/wxu2kbm.js"></script>
+  	<script>try{Typekit.load();}catch(e){}</script>
+  	<!--[if lt IE 9]>
+        	<script src="{{ "/js/html5shiv.js" | prepend: site.baseurl }}"></script>
+  	      <script src="{{ "/js/respond.js" | prepend: site.baseurl }}"></script>
+  	<![endif]-->
 </head>
